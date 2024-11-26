@@ -6,17 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y D K J S -- UP & GOING</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 <body>
-<h1>Y D K J S</h1>
-<p>This is up & going page.</p>
+  <header>
+    <h1>Y D K J S</h1>
+    <p>by <b>KYLE SIMPSON</b></p>
+  </header>
 
-<ul>
-  <li><a href="index.html">HOME</a></li>
-</ul>
+  <main>
+    <h2><a href="index.html" class="back-arrow">←</a>&nbsp;UP & GOING</h2>
 
-<h2>Code</h2>
-<p>A program, often referred to as source code or just code, is a set of special instructions to tell computer what tasks to perform.</p>
-<p>The rules for valid format and combinations of instructions is called a computer language, sometimes reffered to as its syntax, much the same as English tells you how to spell words and how to create valid sentances using words and punctuation.</p>
+    <h3>Code</h3>
+    <p>A program, often referred to as <i>source code</i> or just <i>code</i>, is a set of special instructions to tell computer what tasks to perform.</p>
+    <p>The rules for valid format and combinations of instructions is called a <i>computer language</i>, sometimes referred to as its <i>syntax</i>, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.</p>
+
+    <h3>Statements</h3>
+    <p>In a computer language, a group of words, numbers, and operators that performs a specific task is a <i>statement</i> ( <code><span title="variable">a</span> <span title="operator">=</span> <span title="variable">b</span> <span title="operator">*</span> <span title="literal value">2</span></code> ) </p>
+    <p>Most statements in JavaScript conclude with a semicolon (<code>;</code>) at the end.</p>
+    <p>Programs are just collections of many statements; which together describe all the steps that it takes to perform your program's purpose.</p>
+
+    <h3>Expressions</h3>
+    <p>Statements are made up of one or more <i>expressions</i>. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators.</p>
+    <p>For example: <code>a = b * 2;</code></p>
+    <p>This statement has four expressions in it:</p>
+    <ul>
+      <li><b>2</b> is a <i>literal value expression</i>.</li>
+      <li><b>b</b> is a <i>variable expression</i>, which means to retrieve its current value.</li>
+      <li><b>b * 2</b> is an <i>arithmetic expression</i>, which means to do the multiplication.</li>
+      <li><b>a = b * 2</b> is an <i>assignment expression</i>, which means to assign the result of the <b>b * 2</b> expression to the variable <b>a</b>.</li>
+    </ul>
+    <p>A general expression that stands alone is also called an <i>expression statement</i>, such as the following: <code title="this flavor of expression is not very common or useful, as generally it wouldn't have any effect on the running of the program">b * 2;</code></p>
+    <p>A more common expression statement is a <i>call expression</i> statement, as the entire statement is the function call expression itself: <code>alert( a );</code></p>
+
+    <h3>Executing a Program</h3>
+    <p>How do those collections of programming statements tell the computer what to do? Thr program needs to be <i>executed</i>, also referred to as <i>running the program</i>.</p>
+    <p>Special utility on the computer (either an <i>interpreter</i> or a <i>compiler</i>) is used to translate the code you write into commands a computer can understand.</p>
+    <p>For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is run, which is usually called <i>interpreting</i> the code.</p>
+    <p>For other languages, the translation is done ahead of time, called <i>compiling</i> the code, so when the program <i>runs</i> later, what's running is actually the already compiled computer instructions ready to go.</p>
+    <p>It's typically asserted that JavaScript is <i>interpreted</i>, because your JavaScript source code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually <i>compiles</i> the program on the fly and then immediately runs the compiled code.</p>
+  </main>
 </body>
 </html>
